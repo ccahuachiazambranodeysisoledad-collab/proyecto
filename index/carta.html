@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Sabores de SHARO - Carta</title>
+    <meta name="description" content="Explora la carta de Los Sabores de SHARO: ceviches, tiraditos, causas y más delicias de Espinar.">
+    <link rel="stylesheet" href="../estilos/carta.css">
+    <script src="../java/carta.js" defer></script>
+</head>
+<body>
+    <!-- ====== HEADER ====== -->
+    <header class="header">
+        <div class="logo-area">
+            <img src="../imagenes/logo-sharo.jpg" alt="Logo SHARO">
+            <h1>LOS SABORES DE SHARO</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="presentacion.html">Presentación</a></li>
+                <li><a href="carta.html" class="active">Carta</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+      <!-- ====== CONTENIDO CARTA ====== -->
+   <section class="carta">
+    <h2>Nuestra Carta</h2>
+
+    <div class="categorias">
+
+        <!-- CEVICHES -->
+        <div class="categoria">
+            <h3>Ceviches</h3>
+
+            <div class="plato">
+                <img src="../imagenes/WhatsApp Image 2025-12-14 at 5.05.22 PM (1).jpeg ">
+                <p>ceviche clasico </p>
+                <span>S/ 25</span>
+                <button onclick="agregarCarrito('Ceviche Clásico',25)">Pedir</button>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/WhatsApp Image 2025-12-14 at 5.05.22 PM (2).jpeg">
+                <p>Cevichop clasico </p>
+                <span>S/ 30</span>
+                <button onclick="agregarCarrito('Ceviche Mixto',30)">Pedir</button>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/WhatsApp Image 2025-12-14 at 5.05.22 PM.jpeg">
+                <p>Ceviche Mixto</p>
+                <span>S/ 35</span>
+                <button onclick="agregarCarrito('Ceviche de Conchas',35)">Pedir</button>
+            </div>
+        </div>
+
+        <!-- TRÍOS -->
+        <div class="categoria">
+            <h3>Tríos</h3>
+
+            <div class="plato">
+                <img src="../imagenes/trio marino.jpg">
+                <p>Trío Marino</p>
+                <span>S/ 38</span>
+                <button onclick="agregarCarrito('Trío Marino',38)">Pedir</button>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/arroz con marisco.jpg">
+                <p>Trío Especial</p>
+                <span>S/ 40</span>
+                <button onclick="agregarCarrito('Trío Especial',40)">Pedir</button>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/duo marino.jpg">
+                <p>Trío Clásico</p>
+                <span>S/ 36</span>
+                <button onclick="agregarCarrito('Trío Clásico',36)">Pedir</button>
+            </div>
+        </div>
+
+        <!-- MIXTAS -->
+        <div class="categoria">
+            <h3>Mixtas</h3>
+
+            <div class="plato">
+                <img src="../imagenes/jalea mixta.jpg">
+                <p>Jalea Mixta</p>
+                <span>S/ 35</span>
+                <button onclick="agregarCarrito('Jalea Mixta',35)">Pedir</button>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/bistec alo pobre.jpg">
+                <p>Chicharrón Mixto</p>
+                <span>S/ 34</span>
+                <button onclick="agregarCarrito('Chicharrón Mixto',34)">Pedir</button>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/paruleta criminal.jpg">
+                <p>Parihuela</p>
+                <span>S/ 42</span>
+                <button onclick="agregarCarrito('Parihuela',42)">Pedir</button>
+            </div>
+        </div>
+
+        <!-- REFRESCOS -->
+        <div class="categoria">
+            <h3>Refrescos</h3>
+
+            <div class="plato">
+                <img src="../imagenes/chicha morada.jpg">
+                <p>Chicha Morada</p>
+                <span>S/ 6</span>
+                <button onclick="agregarCarrito('Chicha Morada',6)">Pedir</button>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/jugo de maracuya.jpg">
+                <p>Limonada</p>
+                <span>S/ 5</span>
+                <button onclick="agregarCarrito('Limonada',5)">Pedir</button>
+            </div>
+
+            <div class="plato">
+                <img src="../imagenes/limonada.jpeg">
+                <p>Maracuyá</p>
+                <span>S/ 6</span>
+                <button onclick="agregarCarrito('Maracuyá',6)">Pedir</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- ===== CARRITO ===== -->
+<section class="carrito">
+    <h2>🛒 Carrito de pedidos</h2>
+
+    <ul id="lista-carrito"></ul>
+
+    <p><strong>Total:</strong> S/ <span id="total">0</span></p>
+</section>
+    <!-- ====== FOOTER ====== -->
+    <footer>
+        <p>&copy; 2025 Los Sabores de SHARO</p>
+    </footer>
+</body>
+</html>

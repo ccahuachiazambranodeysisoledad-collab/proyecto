@@ -1,0 +1,133 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:  url("../imagenes/ceviche\ 1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #edf0f0;
+}
+/*---NAVEGADOR --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #0b0b0b;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-area img {
+    width: 60px;
+    height: 60px;
+}
+
+.logo-area h1 {
+    color: white;
+    font-size: 22px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: rgb(249, 246, 245);
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.menu ul li a:hover {
+    background-color: #444;
+}
+
+
+/*uvicacion*/
+/* =========================
+   CONTENIDO PRINCIPAL CON IMAGEN DE FONDO
+========================= */
+main {
+    padding: 30px 20px; /* espacio interno */
+    background-image: url("FONDO2.jpg"); /* tu imagen de fondo */
+    background-size: cover;        /* ocupa todo el contenedor */
+    background-position: center;   /* centra la imagen */
+    background-repeat: no-repeat;  /* no se repite */
+    min-height: 80vh;              /* ocupa buena parte de la pantalla */
+}
+
+/* =========================
+   SECCIÓN UBICACIÓN
+========================= */
+.mapa {
+    display: flex;
+    flex-direction: column; /* título, texto y mapa en columna */
+    align-items: center;
+    background-color: rgba(140, 225, 224, 0.9); /* fondo semi-transparente para destacar */
+    padding: 30px 20px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 30px auto; /* centra la sección en la página */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.mapa h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #f3921bca; /* color del título */
+    text-align: center;
+}
+
+.mapa p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.mapa .map {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: 0;
+    border-radius: 10px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .mapa h2 {
+        font-size: 24px;
+    }
+
+    .mapa p {
+        font-size: 15px;
+    }
+
+    .mapa .map {
+        height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mapa h2 {
+        font-size: 20px;
+    }
+
+    .mapa p {
+        font-size: 14px;
+    }
+
+    .mapa .map {
+        height: 250px;
+    }
+}
